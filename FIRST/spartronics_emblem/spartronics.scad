@@ -91,10 +91,17 @@ module spartronics_emblem() {
         curved_text("SPARTRONICS", text_radius, text_spacing);
 
     color("yellow")
+/*
+        // Curved 4915 text
         rotate([0,0,180])
         translate([0,0,base_height])
         linear_extrude(height=logo_height-base_height)
         curved_text("4915", text_radius, text_spacing, reverse=true);
+*/
+//      Straight 4915 text
+        translate([0,-22,base_height])
+        linear_extrude(height=logo_height-base_height)
+        text("4915", halign="center", valign="center", size=8, font="SF TransRobotics");
 }
 
 //rotate([45, 0, $t*360])
