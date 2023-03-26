@@ -40,7 +40,7 @@ module main() {
           cube([top_tab_width, top_tab_height, depth], center = true);
         }
 
-        translate([hole_left_offset - width / 2 + hole_width / 2, height/2, 0])
+        translate([hole_left_offset - width / 2 + hole_width / 2 + 1.0, height/2 - 2.0, 0])
         cube([hole_width, hole_height, depth + 1], center = true);
     }
 }
