@@ -7,7 +7,7 @@
 
 /* [Dimensions] */
 base = 120.0; // mm
-height = 50.0;
+height = 75.0;
 width = 15.0;
 panel_width = 0.9; // for screwing on
 angle = 30.0; // degrees
